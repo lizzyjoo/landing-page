@@ -9,8 +9,10 @@ body {
 }
 
 img {
-    width: 20%;
-    height: 50%;
+    object-fit: cover;
+    padding-left: 1.5rem;
+    width: 50%;
+    max-height: 250px;
 }
 
 .body {
@@ -24,6 +26,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     padding: 60px 200px 150px;
     gap: 60px;
     flex-shrink: 0;
@@ -34,13 +37,18 @@ img {
 .header-top {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     margin-bottom: 60px;
+    flex-shrink: 0;
+    padding: 10px;
+
     
 }
 .header-logo {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: bold;
+    flex-shrink: 0;
     
 }
 
@@ -149,21 +157,25 @@ a {
 }
 
 .quote-section {
-    height: 200px;
     background: #E5E7EB;
     padding-right: 200px;
     padding-left: 200px;
     padding: 100px 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
     gap: 20px;
+    
+    
 }
 
 .quote-source {
-    text-align: end;
+   
     color: #1F2937;
     font-weight: bold;
     font-size: 20px;
+    text-align: right;
 }
 
 .quote-text {
@@ -171,6 +183,8 @@ a {
     font-style: italic;
     color: #1F2937;
     font-weight: lighter;
+    max-width: 60%;
+    
 }
 .call-to-action {
     display: flex;
