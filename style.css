@@ -4,11 +4,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    flex-wrap: wrap;
-       
 }
 
-img {
+.front-samoyed {
     object-fit: cover;
     padding-left: 1.5rem;
     width: 50%;
@@ -18,20 +16,16 @@ img {
 .body {
     display: flex;
     flex: 1;
-    
 }
+
 .header {
-    height: 300px;
     background: #1F2937;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
-    padding: 60px 200px 150px;
+    padding: 20px 100px 100px;
     gap: 60px;
-    flex-shrink: 0;
-    margin-top: 0;
-    
     
 }
 .header-top {
@@ -40,8 +34,7 @@ img {
     align-items: baseline;
     margin-bottom: 60px;
     flex-shrink: 0;
-    padding: 10px;
-
+    padding-top: 10px;
     
 }
 .header-logo {
@@ -119,14 +112,8 @@ a {
 .information {
     display: flex;
     flex-direction: column;
-    height: 300px;
-    background: white;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
-    padding-right: 200px;
-    padding-left: 200px;
-    padding-bottom: 80px;
+   
 }
 
 .information-title {
@@ -136,43 +123,64 @@ a {
     color: #1F2937;
 
 }
-
-.info {
-    max-width: 150px;
-}
-
-.info-placeholder {
-  border-radius: 25px;
-  border: 2px solid #3882F6;
-  padding: 20px;
-  width: 100px;
-  height: 100px;
-
-}
-
 .info-container {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+.photo {
+    border-radius: 20px;
+    border: 2px solid #3882F6;
+   
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.scratchy-samoyed {
+    border-radius: 20px;
+    border: 2px solid #3882F6;
+   
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    object-position: 100% 0;
+}
+
+
+
+
+.info-text {
+    text-align: center;
+    max-width: 200px;
+    font-size: 18px;
+    color: rgb(90, 90, 90);
+}
 .quote-section {
     background: #E5E7EB;
     padding-right: 200px;
     padding-left: 200px;
     padding: 100px 200px;
+    color: #1F2937;
+    display: flex;
+    gap: 20px;
+    
+
+}
+
+.quote-align {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    gap: 20px;
-    
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 
 .quote-source {
-   
-    color: #1F2937;
     font-weight: bold;
     font-size: 20px;
     text-align: right;
@@ -181,9 +189,10 @@ a {
 .quote-text {
     font-size: 36px;
     font-style: italic;
-    color: #1F2937;
     font-weight: lighter;
     max-width: 60%;
+    
+   
     
 }
 .call-to-action {
